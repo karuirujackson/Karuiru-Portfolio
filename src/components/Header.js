@@ -10,14 +10,21 @@ import { FaXTwitter } from "react-icons/fa6";
 import Profile from '../assets/Profile.jpeg';
 import { CiFaceMeh } from "react-icons/ci";
 import { FaGraduationCap } from "react-icons/fa6";
+import { FiMonitor } from "react-icons/fi";
+import { GrServerCluster } from "react-icons/gr";
+import { FaDatabase } from "react-icons/fa";
+import { SiAzuredevops } from "react-icons/si";
+import { TiMessages } from "react-icons/ti";
+import { IoMdHappy } from "react-icons/io";
+import { FaRegEnvelope } from "react-icons/fa";
 
 function Header() {
   return (
-    <main className='bg-gradient-to-br from-slate-800 to-slate-200 w-full min-h-screen'>
+    <main className='bg-gradient-to-tr from-slate-800 to-slate-200 w-full min-h-screen'>
         <header >
             <div className="relative">
                 <nav className="absolute w-full top-4 bg-slate-600 shadow-md shadow-cyan-200">
-                    <div className=" flex md:flex items-center justify-center border border-slate-400 rounded h-14 p-3 space-x-8">
+                    <div className="flex md:flex items-center justify-center border border-slate-400 rounded h-14 p-3 space-x-8">
                         <div className="flex items-center justify-center space-x-5">
                             <div className="text-white text-2xl"><IoHome /></div>
                             <div className="flex uppercase space-x-5">
@@ -31,8 +38,8 @@ function Header() {
                             <div className="text-green-500 animate-ping"><GoDotFill /></div>
                             <div className="flex items-center justify-center space-x-5">
                                 <span className="text-white text-sm">Available for Work</span>
-                                <button className="flex items-center justify-center border border-slate-400 rounded px-1 py-1 space-x-1.5 text-black bg-cyan-600">
-                                    <div className="text-2xl"><CiCalendarDate /></div>
+                                <button className="flex items-center justify-center border border-slate-400 rounded px-1 py-1 space-x-1.5 sm:text text-black bg-cyan-600">
+                                    <div className=""><CiCalendarDate /></div>
                                     <span>SCHEDULE CALL</span>
                                 </button>
                             </div>
@@ -68,30 +75,271 @@ function Header() {
                 </div>   
             </div>
         </header>
-        <section className=" relative pt-32 flex-cols">
+        <section className=" relative pt-28 flex-cols">
             <div className="flex items-center justify-center space-x-1">
                 <div className="text-cyan-300 text-2xl font-bold">
                     <CiFaceMeh />
                 </div>
                 <h2 className="text-white text-2xl font-bold">About Me</h2>
             </div>
-            <div className="mx-auto w-4/5 pt-3">
-                <p className="flex items-center justify-center border border-cyan-300 rounded-xl py-5 text-center text-slate-100">
+            <div className="mx-auto w-2/3 pt-3 ">
+                <p className="flex items-center justify-center border border-cyan-300 rounded-xl py-5 shadow shadow-cyan-50 text-center text-slate-100">
                     Innovative FrontEnd Software Engineer with a keen eye for detail and a commitment to continuous learning. Armed with a solid foundation in both front-end and some back-end development, I thrive on tackling complex challenges and delivering elegant and interactive solutions within the web2 and web3 space.
                 </p>
             </div>
         </section>
-        <section className="relative pt-20 flex-cols">
+        <section className="relative pt-10 flex-cols">
             <div className="flex items-center justify-center space-x-1 pb-3">
                 <div className="text-cyan-300 text-2xl font-bold">
                     <FaGraduationCap />
                 </div>
                 <h2 className="text-white text-2xl font-bold">Education and Work Experience</h2>
             </div>
-            <div className=" mx-auto w-4/5 pt-3 border rounded-lg border-cyan-300">
-                <h3 className="text-xl text-cyan-300">FrontEnd Software Engineer</h3>
-                <h4 className="text-cyan-500">Freelancer</h4>
-                 <span className="text-white">Currently working on a Frontend and Backend code of an E-commerce application </span>
+            <div className="mx-auto w-2/3 px-3 pt-3 shadow-md shadow-cyan-50  border rounded-lg border-cyan-300">
+                <h3 className="text-xl  text-cyan-300">Frontend Software Engineer</h3>
+                <h4 className="text-cyan-400">Freelancer</h4>
+                <ul className="text-white px-3">
+                    <li>
+                        Currently working on a Frontend and Backend code of an E-commerce application.
+                    </li>
+                    <li>
+                        Collaborated with the friends to quickly and efficiently build front-end apps using ReactJS.
+                    </li>
+                </ul>
+                <h4 className="text-cyan-400">2024-present</h4>
+            </div>
+            <div className="mx-auto w-2/3 px-3 pt-3 shadow-md shadow-cyan-50  border rounded-lg border-cyan-300">
+                <h3 className="text-xl  text-cyan-300">Frontend Software Engineer</h3>
+                <h4 className="text-cyan-400">Freelancer</h4>
+                <ul className="text-white px-3">
+                    <li>
+                        Currently working on a Frontend and Backend code of an E-commerce application.
+                    </li>
+                    <li>
+                        Collaborated with the friends to quickly and efficiently build front-end apps using ReactJS.
+                    </li>
+                </ul>
+                <h4 className="text-cyan-400">2024-present</h4>
+            </div>
+        </section>
+        <section className="relative pt-10 flex-col">
+            <div className="mx-auto w-2/3 px-3 pt-3 shadow-md shadow-cyan-50  border rounded-lg border-cyan-300">
+                <h3 className="text-xl  text-cyan-300">Bachelor of Science in Geospatial Engineering</h3>
+                <h4 className="text-cyan-400">University of Nairobi</h4>
+                <ul className="text-white px-3">
+                    <li>Collaboration and Communication Skills.</li>
+                    <li>Introduction to Programming Langauges and Emerging Technologies.</li>
+                    <li>Problem Solving and Innovation.</li>
+                    <li>In-demand Skills.</li>
+                </ul>
+                <h4 className="text-cyan-400">2011 - 2016</h4>
+            </div>
+        </section>
+        
+        <section className="relative pt-10">
+            <div className="mx-auto w-2/3 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="flex-col p-2 border rounded-lg shadow-md shadow-slate-50 border-cyan-100">
+                    <div className="flex items-center justify-start space-x-2 pb-3">
+                        <FiMonitor className='text-cyan-300 text-xl font-bold' />
+                        <span className="text-white uppercase">Front-end</span>
+                    </div>
+                    <div className="flex-col">
+                        <div className="text-white">
+                            <span className="">React.Js</span>
+                        </div>
+                        <div className="flex items-center justify-start space-x-2 pb-2">
+                            <div className="w-4/5 border-slate-600 border-2">
+                                <div className="w-11/12 border-yellow-400 border-2"></div>
+                            </div>
+                        </div>
+                        <div className="text-white">
+                            <span>JavaScript/TypeScript</span>
+                        </div>
+                        <div className="flex items-center justify-start space-x-2 pb-2">
+                            <div className="w-4/5 border-slate-600 border-2">
+                                <div className="w-11/12 border-yellow-400 border-2"></div>
+                            </div>
+                        </div>
+                        <div className="text-white">
+                            <span>NextJS</span>
+                        </div>
+                        <div className="flex items-center justify-start space-x-2 pb-2">
+                            <div className="w-4/5 border-slate-600 border-2">
+                                <div className="w-4/5 border-yellow-400 border-2"></div>
+                            </div>
+                        </div>
+                        <div className="text-white">
+                            <span>Component-Libraries</span>
+                        </div>
+                        <div className="flex items-center justify-start space-x-2 pb-2">
+                            <div className="w-4/5 border-slate-600 border-2">
+                                <div className="w-4/5 border-yellow-400 border-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="flex-col p-2 border rounded-lg shadow-md shadow-slate-50 border-cyan-100 ">
+                    <div className="flex items-center justify-start space-x-2 pb-3">
+                        <GrServerCluster className='text-cyan-300 text-xl font-bold' />
+                        <span className="text-white uppercase">Back-end</span>
+                    </div>
+                    <div className="flex-col">
+                        <div className="text-white">
+                            <span className="">Node.Js</span>
+                        </div>
+                        <div className="flex items-center justify-start space-x-2 pb-2">
+                            <div className="w-4/5 border-slate-600 border-2">
+                                <div className="w-11/12 border-yellow-400 border-2"></div>
+                            </div>
+                        </div>
+                        <div className="text-white">
+                            <span>NextJS/Express.Js</span>
+                        </div>
+                        <div className="flex items-center justify-start space-x-2 pb-2">
+                            <div className="w-4/5 border-slate-600 border-2">
+                                <div className="w-4/5 border-yellow-400 border-2"></div>
+                            </div>
+                        </div>
+                        <div className="text-white">
+                            <span>Python -Django</span>
+                        </div>
+                        <div className="flex items-center justify-start space-x-2 pb-2">
+                            <div className="w-4/5 border-slate-600 border-2">
+                                <div className="w-4/5 border-yellow-400 border-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="flex-col p-2 border rounded-lg shadow-md shadow-slate-50 border-slate-100 ">
+                    <div className="flex items-center justify-start space-x-2 pb-3">
+                        <FaDatabase className='text-cyan-300 text-xl font-bold' />
+                        <span className="text-white uppercase">Databases</span>
+                    </div>
+                    <div className="flex-col">
+                        <div className="text-white">
+                            <span className="">Amazon RDS</span>
+                        </div>
+                        <div className="flex items-center justify-start space-x-2 pb-2">
+                            <div className="w-4/5 border-slate-600 border-2">
+                                <div className="w-4/5 border-yellow-400 border-2"></div>
+                            </div>
+                        </div>
+                        <div className="text-white">
+                            <span>Amazon DynamoDB</span>
+                        </div>
+                        <div className="flex items-center justify-start space-x-2 pb-2">
+                            <div className="w-4/5 border-slate-600 border-2">
+                                <div className="w-4/5 border-yellow-400 border-2"></div>
+                            </div>
+                        </div>
+                        <div className="text-white">
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div className="flex items-center justify-start space-x-2 pb-2">
+                            <div className="w-4/5 border-slate-600 border-2">
+                                <div className="w-4/5 border-yellow-400 border-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="flex-col p-2 border rounded-lg shadow-md shadow-slate-50 border-slate-100 ">
+                    <div className="flex items-center justify-start space-x-2 pb-3">
+                        <SiAzuredevops className='text-cyan-300 text-xl font-bold' />
+                        <span className="text-white uppercase">DevOps</span>
+                    </div>
+                    <div className="flex-col">
+                        <div className="text-white">
+                            <span className="">Git/Github</span>
+                        </div>
+                        <div className="flex items-center justify-start space-x-2 pb-2">
+                            <div className="w-4/5 border-slate-600 border-2">
+                                <div className="w-11/12 border-yellow-400 border-2"></div>
+                            </div>
+                        </div>
+                        <div className="text-white">
+                            <span>Kubernetes</span>
+                        </div>
+                        <div className="flex items-center justify-start space-x-2 pb-2">
+                            <div className="w-4/5 border-slate-600 border-2">
+                                <div className="w-4/5 border-yellow-400 border-2"></div>
+                            </div>
+                        </div>
+                        <div className="text-white">
+                            <span>Docker</span>
+                        </div>
+                        <div className="flex items-center justify-start space-x-2 pb-2">
+                            <div className="w-4/5 border-slate-600 border-2">
+                                <div className="w-4/5 border-yellow-400 border-2"></div>
+                            </div>
+                        </div>
+                        <div className="text-white">
+                            <span>Jenkins</span>
+                        </div>
+                        <div className="flex items-center justify-start space-x-2 pb-2">
+                            <div className="w-4/5 border-slate-600 border-2">
+                                <div className="w-4/5 border-yellow-400 border-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section className="flex-col pt-10 pb-10">
+            <div className="flex items-center justify-center space-x-2">
+                <TiMessages className='text-cyan-300 text-xl font-bold' />
+                <h3 className='text-white text-2xl font-bold pb-3'>Contact Me</h3>
+            </div>
+            <div className="flex items-center justify-center space-x-2 pb-3">
+                <span className="text-gray-100">Glad you are here, do not hesitate to contact me!</span>
+                <IoMdHappy className='text-cyan-300 text-xl font-bold' />
+            </div>
+            <div className="flex items-center justify-center pt-2 space-x-2">
+                <button className="flex items-center justify-center uppercase border border-slate-400 rounded-md px-1 py-1 space-x-1.5 sm:text text-black bg-cyan-600">
+                    <div className="">
+                        <FaRegEnvelope className='' />
+                    </div>
+                    <span>Email Me</span>
+                </button>
+                <button className="flex items-center justify-center uppercase border border-slate-400 rounded-md px-1 py-1 space-x-1.5 sm:text text-black bg-cyan-600">
+                    <div className="">
+                        <CiCalendarDate className='text-xl' />
+                    </div>
+                    <span>Schedule Call</span>
+                </button>
+            </div>
+            <div className="flex items-center justify-center mx-auto w-2/3 space-x-2 pt-10 pb-10">
+                <div className="w-1/2 border-slate-300 border-2"></div>
+                <span className='text-slate-300'>OR</span>
+                <div className="w-1/2 border-slate-300 border-2"></div>
+            </div>
+            <div className="flex mx-auto w-2/3 space-x-3">
+                <div className="flex-col space-x-2">
+                   <div className="flex pb-3">
+                        <div>
+                            <input type="text" placeholder='Name' className="rounded-lg py-2 w-40" />
+                        </div>
+                        <div>
+                            <input type="text" placeholder='Email' className="rounded-lg py-2 w-40" />
+                        </div>
+                    </div>
+                    <div>
+                        <textarea name="" id="" placeholder='Write Your Message' className='w-full h-44 rounded-lg'></textarea>
+                    </div>
+                </div>
+                <div className="flex-col">
+                    <div className="flex pb-3">
+                        <button className="text-white border rounded-lg px-10 py-3">LinkedIn</button>
+                    </div>
+                    <div className="flex pb-3">
+                        <button className="text-white border rounded-lg px-10 py-3">XTwitter</button>
+                    </div>
+                    <div className="flex pb-3">
+                        <button className="text-white border rounded-lg px-10 py-3">Facebook</button>
+                    </div>
+                    <div className="flex pb-3">
+                        <button className="text-white border rounded-lg px-10 py-3">Instagram</button>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
