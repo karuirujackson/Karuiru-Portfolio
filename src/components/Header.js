@@ -17,6 +17,7 @@ import { SiAzuredevops } from "react-icons/si";
 import { TiMessages } from "react-icons/ti";
 import { IoMdHappy } from "react-icons/io";
 import { FaRegEnvelope } from "react-icons/fa";
+import { IoIosArrowForward } from "react-icons/io";
 
 function Header() {
   return (
@@ -38,7 +39,7 @@ function Header() {
                             <div className="text-green-500 animate-ping"><GoDotFill /></div>
                             <div className="flex items-center justify-center space-x-5">
                                 <span className="text-white text-sm">Available for Work</span>
-                                <button className="flex items-center justify-center border border-slate-400 rounded px-1 py-1 space-x-1.5 sm:text text-black bg-cyan-600">
+                                <button className="flex items-center justify-center border border-slate-400 rounded px-1 py-1 space-x-1.5 sm:text text-black bg-cyan-400">
                                     <div className=""><CiCalendarDate /></div>
                                     <span>SCHEDULE CALL</span>
                                 </button>
@@ -52,14 +53,14 @@ function Header() {
                     <img src={Profile} alt='Profile' className='w-40 h-36 rounded-full scale-75'/>
                 </div>
                 <div className="flex items-center justify-center space-x-1">
-                    <div className='text-2xl text-cyan-300 animate-bounce'><FaRegHandPaper /></div>
+                    <div className='text-2xl text-cyan-400 animate-bounce'><FaRegHandPaper /></div>
                     <span className="text-white text-2xl">Hello, I am</span>
                 </div>
                 <div className="flex items-center justify-center">
-                    <h2 className="text-cyan-400 font-bold text-3xl underline">Jackson Karuiru</h2>
+                    <h2 className="text-cyan-400 text-3xl underline">Jackson Karuiru</h2>
                 </div>
                 <span className="flex items-center justify-center text-white text-xl pt-3 font-bold">FrontEnd Software Engineer</span>
-                <p className="flex items-center justify-center text-md text-gray-300 pt-1 ">
+                <p className="flex items-center justify-center text-md text-gray-100 pt-1 ">
                     A tech enthusiastic and a Freelancer providing Software Development and Design services. 
                 </p>
                 <div className="flex items-center justify-center space-x-2 text-cyan-400">
@@ -77,7 +78,7 @@ function Header() {
         </header>
         <section className=" relative pt-28 flex-cols">
             <div className="flex items-center justify-center space-x-1">
-                <div className="text-cyan-300 text-2xl font-bold">
+                <div className="text-cyan-400 text-2xl font-bold">
                     <CiFaceMeh />
                 </div>
                 <h2 className="text-white text-2xl font-bold">About Me</h2>
@@ -90,36 +91,38 @@ function Header() {
         </section>
         <section className="relative pt-10 flex-cols">
             <div className="flex items-center justify-center space-x-1 pb-3">
-                <div className="text-cyan-300 text-2xl font-bold">
+                <div className="text-cyan-400 text-2xl font-bold">
                     <FaGraduationCap />
                 </div>
                 <h2 className="text-white text-2xl font-bold">Education and Work Experience</h2>
             </div>
-            <div className="mx-auto w-2/3 px-3 pt-3 shadow-md shadow-cyan-50  border rounded-lg border-cyan-300">
-                <h3 className="text-xl  text-cyan-300">Frontend Software Engineer</h3>
-                <h4 className="text-cyan-400">Freelancer</h4>
-                <ul className="text-white px-3">
-                    <li>
-                        Currently working on a Frontend and Backend code of an E-commerce application.
-                    </li>
-                    <li>
-                        Collaborated with the friends to quickly and efficiently build front-end apps using ReactJS.
-                    </li>
-                </ul>
-                <h4 className="text-cyan-400">2024-present</h4>
-            </div>
-            <div className="mx-auto w-2/3 px-3 pt-3 shadow-md shadow-cyan-50  border rounded-lg border-cyan-300">
-                <h3 className="text-xl  text-cyan-300">Frontend Software Engineer</h3>
-                <h4 className="text-cyan-400">Freelancer</h4>
-                <ul className="text-white px-3">
-                    <li>
-                        Currently working on a Frontend and Backend code of an E-commerce application.
-                    </li>
-                    <li>
-                        Collaborated with the friends to quickly and efficiently build front-end apps using ReactJS.
-                    </li>
-                </ul>
-                <h4 className="text-cyan-400">2024-present</h4>
+            <div className="flex-col space-y-10">
+                <div className="mx-auto w-2/3 px-3 pt-3 shadow-md shadow-cyan-50  border rounded-lg border-cyan-300">
+                    <h3 className="text-xl  text-cyan-300">Frontend Software Engineer</h3>
+                    <h4 className="text-cyan-400">Freelancer</h4>
+                    <ul className="text-white px-3">
+                        <li>
+                            Currently working on a Frontend and Backend code of an E-commerce application.
+                        </li>
+                        <li>
+                            Collaborated with the friends to quickly and efficiently build front-end apps using ReactJS.
+                        </li>
+                    </ul>
+                    <h4 className="text-cyan-400">2024-present</h4>
+                </div>
+                <div className="mx-auto w-2/3 px-3 pt-3 shadow-md shadow-cyan-50  border rounded-lg border-cyan-300">
+                    <h3 className="text-xl  text-cyan-300">Frontend Software Engineer</h3>
+                    <h4 className="text-cyan-400">Freelancer</h4>
+                    <ul className="text-white px-3">
+                        <li>
+                            Currently working on a Frontend and Backend code of an E-commerce application.
+                        </li>
+                        <li>
+                            Collaborated with the friends to quickly and efficiently build front-end apps using ReactJS.
+                        </li>
+                    </ul>
+                    <h4 className="text-cyan-400">2024-present</h4>
+                </div>
             </div>
         </section>
         <section className="relative pt-10 flex-col">
@@ -149,7 +152,7 @@ function Header() {
                         </div>
                         <div className="flex items-center justify-start space-x-2 pb-2">
                             <div className="w-4/5 border-slate-600 border-2">
-                                <div className="w-11/12 border-yellow-400 border-2"></div>
+                                <div className="w-11/12 border-green-600 border-2"></div>
                             </div>
                         </div>
                         <div className="text-white">
@@ -157,7 +160,7 @@ function Header() {
                         </div>
                         <div className="flex items-center justify-start space-x-2 pb-2">
                             <div className="w-4/5 border-slate-600 border-2">
-                                <div className="w-11/12 border-yellow-400 border-2"></div>
+                                <div className="w-11/12 border-green-600 border-2"></div>
                             </div>
                         </div>
                         <div className="text-white">
@@ -165,7 +168,7 @@ function Header() {
                         </div>
                         <div className="flex items-center justify-start space-x-2 pb-2">
                             <div className="w-4/5 border-slate-600 border-2">
-                                <div className="w-4/5 border-yellow-400 border-2"></div>
+                                <div className="w-4/5 border-green-600 border-2"></div>
                             </div>
                         </div>
                         <div className="text-white">
@@ -173,7 +176,7 @@ function Header() {
                         </div>
                         <div className="flex items-center justify-start space-x-2 pb-2">
                             <div className="w-4/5 border-slate-600 border-2">
-                                <div className="w-4/5 border-yellow-400 border-2"></div>
+                                <div className="w-4/5 border-green-600 border-2"></div>
                             </div>
                         </div>
                     </div>
@@ -189,7 +192,7 @@ function Header() {
                         </div>
                         <div className="flex items-center justify-start space-x-2 pb-2">
                             <div className="w-4/5 border-slate-600 border-2">
-                                <div className="w-11/12 border-yellow-400 border-2"></div>
+                                <div className="w-11/12 border-green-600 border-2"></div>
                             </div>
                         </div>
                         <div className="text-white">
@@ -197,7 +200,7 @@ function Header() {
                         </div>
                         <div className="flex items-center justify-start space-x-2 pb-2">
                             <div className="w-4/5 border-slate-600 border-2">
-                                <div className="w-4/5 border-yellow-400 border-2"></div>
+                                <div className="w-4/5 border-green-600 border-2"></div>
                             </div>
                         </div>
                         <div className="text-white">
@@ -205,7 +208,7 @@ function Header() {
                         </div>
                         <div className="flex items-center justify-start space-x-2 pb-2">
                             <div className="w-4/5 border-slate-600 border-2">
-                                <div className="w-4/5 border-yellow-400 border-2"></div>
+                                <div className="w-4/5 border-green-600 border-2"></div>
                             </div>
                         </div>
                     </div>
@@ -221,7 +224,7 @@ function Header() {
                         </div>
                         <div className="flex items-center justify-start space-x-2 pb-2">
                             <div className="w-4/5 border-slate-600 border-2">
-                                <div className="w-4/5 border-yellow-400 border-2"></div>
+                                <div className="w-4/5 border-green-600 border-2"></div>
                             </div>
                         </div>
                         <div className="text-white">
@@ -229,7 +232,7 @@ function Header() {
                         </div>
                         <div className="flex items-center justify-start space-x-2 pb-2">
                             <div className="w-4/5 border-slate-600 border-2">
-                                <div className="w-4/5 border-yellow-400 border-2"></div>
+                                <div className="w-4/5 border-green-600 border-2"></div>
                             </div>
                         </div>
                         <div className="text-white">
@@ -237,7 +240,7 @@ function Header() {
                         </div>
                         <div className="flex items-center justify-start space-x-2 pb-2">
                             <div className="w-4/5 border-slate-600 border-2">
-                                <div className="w-4/5 border-yellow-400 border-2"></div>
+                                <div className="w-4/5 border-green-600 border-2"></div>
                             </div>
                         </div>
                     </div>
@@ -245,15 +248,15 @@ function Header() {
                 <div className="flex-col p-2 border rounded-lg shadow-md shadow-slate-50 border-slate-100 ">
                     <div className="flex items-center justify-start space-x-2 pb-3">
                         <SiAzuredevops className='text-cyan-300 text-xl font-bold' />
-                        <span className="text-white uppercase">DevOps</span>
+                        <span className="text-white uppercase">DevOps / ci-cd</span>
                     </div>
                     <div className="flex-col">
                         <div className="text-white">
-                            <span className="">Git/Github</span>
+                            <span className="">Git/Github Actions</span>
                         </div>
                         <div className="flex items-center justify-start space-x-2 pb-2">
                             <div className="w-4/5 border-slate-600 border-2">
-                                <div className="w-11/12 border-yellow-400 border-2"></div>
+                                <div className="w-11/12 border-green-600 border-2"></div>
                             </div>
                         </div>
                         <div className="text-white">
@@ -261,7 +264,7 @@ function Header() {
                         </div>
                         <div className="flex items-center justify-start space-x-2 pb-2">
                             <div className="w-4/5 border-slate-600 border-2">
-                                <div className="w-4/5 border-yellow-400 border-2"></div>
+                                <div className="w-4/5 border-green-600 border-2"></div>
                             </div>
                         </div>
                         <div className="text-white">
@@ -269,7 +272,7 @@ function Header() {
                         </div>
                         <div className="flex items-center justify-start space-x-2 pb-2">
                             <div className="w-4/5 border-slate-600 border-2">
-                                <div className="w-4/5 border-yellow-400 border-2"></div>
+                                <div className="w-4/5 border-green-600 border-2"></div>
                             </div>
                         </div>
                         <div className="text-white">
@@ -277,7 +280,7 @@ function Header() {
                         </div>
                         <div className="flex items-center justify-start space-x-2 pb-2">
                             <div className="w-4/5 border-slate-600 border-2">
-                                <div className="w-4/5 border-yellow-400 border-2"></div>
+                                <div className="w-4/5 border-green-600 border-2"></div>
                             </div>
                         </div>
                     </div>
@@ -293,18 +296,18 @@ function Header() {
                 <span className="text-gray-100">Glad you are here, do not hesitate to contact me!</span>
                 <IoMdHappy className='text-cyan-300 text-xl font-bold' />
             </div>
-            <div className="flex items-center justify-center pt-2 space-x-2">
-                <button className="flex items-center justify-center uppercase border border-slate-400 rounded-md px-1 py-1 space-x-1.5 sm:text text-black bg-cyan-600">
-                    <div className="">
-                        <FaRegEnvelope className='' />
+            <div className="flex items-center justify-center pt-2 space-x-8">
+                <button className="flex items-center justify-center uppercase border border-slate-400 rounded-md px-1 py-1 space-x-1.5 sm:text text-black bg-cyan-400">
+                    <div className="py-1">
+                        <FaRegEnvelope className='text-xl' />
                     </div>
-                    <span>Email Me</span>
+                    <span className='text-sm'>Email Me</span>
                 </button>
-                <button className="flex items-center justify-center uppercase border border-slate-400 rounded-md px-1 py-1 space-x-1.5 sm:text text-black bg-cyan-600">
-                    <div className="">
+                <button className="flex items-center justify-center uppercase border border-slate-400 rounded-md px-1 py-1 space-x-1.5 sm:text text-black bg-cyan-400">
+                    <div className="py-1">
                         <CiCalendarDate className='text-xl' />
                     </div>
-                    <span>Schedule Call</span>
+                    <span className='text-sm'>Schedule Call</span>
                 </button>
             </div>
             <div className="flex items-center justify-center mx-auto w-2/3 space-x-2 pt-10 pb-10">
@@ -312,35 +315,62 @@ function Header() {
                 <span className='text-slate-300'>OR</span>
                 <div className="w-1/2 border-slate-300 border-2"></div>
             </div>
-            <div className="flex mx-auto w-2/3 space-x-3">
-                <div className="flex-col space-x-2">
-                   <div className="flex pb-3">
-                        <div>
-                            <input type="text" placeholder='Name' className="rounded-lg py-2 w-40" />
+            <form action="">
+                <div className="md:flex-row md:w-full flex flex-col items-center justify-center mx-auto w-4/5 space-x-10">
+                    <div className="flex-col space-x-2">
+                        <div className="md:grid grid-cols-2 gap-1 space-x-2 pb-3">
+                            <div className="pb-3">
+                                <input type="text" placeholder='Name' className="border border-slate-400 rounded-lg p-2 bg-slate-600" />
+                            </div>
+                            <div>
+                                <input type="text" placeholder='Email' className="border border-slate-400 rounded-lg p-2 bg-slate-600" />
+                            </div>
                         </div>
-                        <div>
-                            <input type="text" placeholder='Email' className="rounded-lg py-2 w-40" />
+                        <div className='pb-2'>
+                            <textarea name="" id="" placeholder='Write Your Message' className='border border-slate-400 bg-slate-600 w-full h-32 rounded-lg p-2'></textarea>
+                        </div>
+                        <div className="flex items-center justify-center pb-3">
+                            <button className="bg-slate-600 border text-cyan-400 rounded-lg py-2 px-20  border-slate-400 shadow-md shadow-cyan-200">Send Message</button>
                         </div>
                     </div>
-                    <div>
-                        <textarea name="" id="" placeholder='Write Your Message' className='w-full h-44 rounded-lg'></textarea>
+                    <div className="grid grid-rows-4 gap-2">
+                        <div className="flex pb-3">
+                            <button className="flex items-center justify-start space-x-8 text-white border rounded-lg px-6 py-3 border-slate-400 shadow-md shadow-cyan-100">
+                                <div className="flex space-x-2">
+                                    <FaGithub className='text-cyan-400 text-xl' />
+                                    <span>Github</span>
+                                </div>
+                                <div className="flex">
+                                    <IoIosArrowForward className='text-cyan-400 text-xl animate-pulse' />
+                                </div>
+                            </button>
+                        </div>
+                        <div className="flex pb-3">
+                            <button className="flex items-center justify-start space-x-8 text-white border rounded-lg px-6 py-3  border-slate-400 shadow-md shadow-cyan-100">
+                                <div className="flex space-x-2">
+                                    <FaLinkedin className='text-cyan-400 text-xl' />
+                                    <span>LinkedIn</span>
+                                </div>
+                                <div className="flex">
+                                    <IoIosArrowForward className='text-cyan-400 text-xl animate-pulse' />
+                                </div>
+                            </button>
+                        </div>
+                        <div className="flex pb-3">
+                            <button className="flex items-center justify-start space-x-8 text-white border rounded-lg px-6 py-3  border-slate-400 shadow-md shadow-cyan-100">
+                                <div className="flex space-x-2">
+                                    <FaXTwitter className='text-cyan-400 text-xl' />
+                                    <span>XTwitter</span>
+                                </div>
+                                <div className="flex">
+                                    <IoIosArrowForward className='text-cyan-400 text-xl animate-pulse' />
+                                </div>
+                            </button>
+                        </div>
+                        
                     </div>
                 </div>
-                <div className="flex-col">
-                    <div className="flex pb-3">
-                        <button className="text-white border rounded-lg px-10 py-3">LinkedIn</button>
-                    </div>
-                    <div className="flex pb-3">
-                        <button className="text-white border rounded-lg px-10 py-3">XTwitter</button>
-                    </div>
-                    <div className="flex pb-3">
-                        <button className="text-white border rounded-lg px-10 py-3">Facebook</button>
-                    </div>
-                    <div className="flex pb-3">
-                        <button className="text-white border rounded-lg px-10 py-3">Instagram</button>
-                    </div>
-                </div>
-            </div>
+            </form>
         </section>
     </main>
   )
